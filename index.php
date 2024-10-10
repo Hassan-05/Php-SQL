@@ -2,7 +2,7 @@
 include 'header.php';
 ?>
 <div id="main-content">
-    <h2>All Records</h2>
+    <h2>All Recordss</h2>
     <?php
         $conn = mysqli_connect("localhost","root","","news_project");
         $sql = "SELECT * FROM students JOIN sclass WHERE students.sclass = sclass.cid";

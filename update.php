@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 <div id="main-content">
-    <h2>Edit Record</h2>
+    <h2>Edit Records</h2>
     <form class="post-form" action="" method="post">
         <div class="form-group">
             <label>Id</label>
