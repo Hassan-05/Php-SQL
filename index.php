@@ -4,9 +4,17 @@ include 'header.php';
 <div id="main-content">
     <h2>All Records</h2>
     <?php
-        $conn = mysqli_connect("localhost","root","","news_project");
+        $conn = mysqli_connect("locahost","root","","news_project");
+        if (!$conn) {
+            echo "Connection failed: " . mysqli_connect_error();
+        }else{
         $sql = "SELECT * FROM students JOIN sclass WHERE students.sclass = sclass.cid";
         $result = mysqli_query($conn, $sql);
+        }
+        if (!$result) {
+            echo "SQL Error: " . mysqli_error($conn);
+        }
+        else{
         if(mysqli_num_rows($result) > 0){
 
         var_dump($result);
@@ -47,6 +55,7 @@ include 'header.php';
     <?php
         }else{
             echo "<h2>No record found</h2>";
+        }
         }
         mysqli_close($conn) ?>
 </div>
