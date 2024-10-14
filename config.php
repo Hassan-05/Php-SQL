@@ -1,23 +1,18 @@
-// Custom error handler function
+<?php
+
+//Custom error handler
+
 function customErrorHandler($errno, $errstr, $errfile, $errline) {
-    // Create a custom error message
-    $errorMessage = "Error [$errno]: $errstr in $errfile on line $errline";
-
-    // Log the error to a file
-    error_log($errorMessage, 3, '/path/to/your/error_log.txt');
-
-    // Optionally, you can display a user-friendly message to the user
-    // echo "An error occurred. Please try again later.";
-    
-    // Prevent the PHP internal error handler from being invoked
+    $errorMessage = "Error [$errno]: $errstr in $errfile on line $errline \n";
+    error_log($errorMessage . PHP_EOL, 3, 'error_log.txt');
+    echo "Sorry an error accured";
     return true;
 }
-
-// Set the custom error handler
 set_error_handler('customErrorHandler');
 
 // Disable displaying errors to the browser
 ini_set('display_errors', '0');
 ini_set('log_errors', '1');
-ini_set('error_log', '/path/to/your/error_log.txt');
+ini_set('error_log','error_log.txt');
 error_reporting(E_ALL);
+?>

@@ -1,5 +1,6 @@
 <?php
 include 'header.php';
+//require 'config.php';
 ?>
 <div id="main-content">
     <h2>All Records</h2>
@@ -16,12 +17,6 @@ include 'header.php';
         }
         else{
         if(mysqli_num_rows($result) > 0){
-
-        var_dump($result);
-/*        echo "<pre>";
-        var_dump($conn);
-        echo "</pre>";
-*/
     ?>
     <table cellpadding="7px">
         <thead>

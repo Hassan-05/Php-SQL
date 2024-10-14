@@ -1,0 +1,30 @@
+Error [2]: mysqli_connect(): php_network_getaddresses: getaddrinfo for locahost failed: No such host is known.  in C:\xampp\htdocs\Php-SQL\index.php on line 8[14-Oct-2024 09:15:10 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for locahost failed: No such host is known.  in C:\xampp\htdocs\Php-SQL\index.php:8
+Stack trace:
+#0 C:\xampp\htdocs\Php-SQL\index.php(8): mysqli_connect('locahost', 'root', Object(SensitiveParameterValue), 'news_project')
+#1 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\index.php on line 8
+Error [2]: mysqli_connect(): php_network_getaddresses: getaddrinfo for locahost failed: No such host is known.  in C:\xampp\htdocs\Php-SQL\index.php on line 8[14-Oct-2024 09:18:56 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for locahost failed: No such host is known.  in C:\xampp\htdocs\Php-SQL\index.php:8
+Stack trace:
+#0 C:\xampp\htdocs\Php-SQL\index.php(8): mysqli_connect('locahost', 'root', Object(SensitiveParameterValue), 'news_project')
+#1 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\index.php on line 8
+Error [2]: mysqli_connect(): php_network_getaddresses: getaddrinfo for locahost failed: No such host is known.  in C:\xampp\htdocs\Php-SQL\index.php on line 8
+[14-Oct-2024 09:20:36 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for locahost failed: No such host is known.  in C:\xampp\htdocs\Php-SQL\index.php:8
+Stack trace:
+#0 C:\xampp\htdocs\Php-SQL\index.php(8): mysqli_connect('locahost', 'root', Object(SensitiveParameterValue), 'news_project')
+#1 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\index.php on line 8
+Error [2]: mysqli_connect(): php_network_getaddresses: getaddrinfo for locahost failed: No such host is known.  in C:\xampp\htdocs\Php-SQL\index.php on line 8 
+
+[14-Oct-2024 09:22:39 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for locahost failed: No such host is known.  in C:\xampp\htdocs\Php-SQL\index.php:8
+Stack trace:
+#0 C:\xampp\htdocs\Php-SQL\index.php(8): mysqli_connect('locahost', 'root', Object(SensitiveParameterValue), 'news_project')
+#1 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\index.php on line 8
+Error [2]: mysqli_connect(): php_network_getaddresses: getaddrinfo for locahost failed: No such host is known.  in C:\xampp\htdocs\Php-SQL\index.php on line 8 
+
+[14-Oct-2024 09:22:47 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for locahost failed: No such host is known.  in C:\xampp\htdocs\Php-SQL\index.php:8
+Stack trace:
+#0 C:\xampp\htdocs\Php-SQL\index.php(8): mysqli_connect('locahost', 'root', Object(SensitiveParameterValue), 'news_project')
+#1 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\index.php on line 8
