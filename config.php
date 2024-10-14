@@ -11,7 +11,7 @@ function customErrorHandler($errno, $errstr, $errfile, $errline) {
 set_error_handler('customErrorHandler');
 
 // Disable displaying errors to the browser
-ini_set('display_errors', '0');
+ini_set('display_errors', '1');
 ini_set('log_errors', '1');
 ini_set('error_log','errors.log');
 error_reporting(E_ALL);

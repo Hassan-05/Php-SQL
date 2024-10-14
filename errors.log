@@ -28,3 +28,77 @@ Stack trace:
 #0 C:\xampp\htdocs\Php-SQL\index.php(8): mysqli_connect('locahost', 'root', Object(SensitiveParameterValue), 'news_project')
 #1 {main}
   thrown in C:\xampp\htdocs\Php-SQL\index.php on line 8
+[14-Oct-2024 19:19:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'news_project.studentclass' doesn't exist in C:\xampp\htdocs\Php-SQL\add.php:26
+Stack trace:
+#0 C:\xampp\htdocs\Php-SQL\add.php(26): mysqli_query(Object(mysqli), 'SELECT * FROM s...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\add.php on line 26
+[14-Oct-2024 19:29:12 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'news_project.studentclass' doesn't exist in C:\xampp\htdocs\Php-SQL\add.php:26
+Stack trace:
+#0 C:\xampp\htdocs\Php-SQL\add.php(26): mysqli_query(Object(mysqli), 'SELECT * FROM s...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\add.php on line 26
+[14-Oct-2024 19:29:17 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'news_project.studentclass' doesn't exist in C:\xampp\htdocs\Php-SQL\add.php:26
+Stack trace:
+#0 C:\xampp\htdocs\Php-SQL\add.php(26): mysqli_query(Object(mysqli), 'SELECT * FROM s...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\add.php on line 26
+Error [2]: mysqli_connect(): php_network_getaddresses: getaddrinfo for loclhost failed: No such host is known.  in C:\xampp\htdocs\Php-SQL\add.php on line 21 
+
+[14-Oct-2024 19:29:28 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for loclhost failed: No such host is known.  in C:\xampp\htdocs\Php-SQL\add.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Php-SQL\add.php(21): mysqli_connect('loclhost', 'root', Object(SensitiveParameterValue), 'news_project')
+#1 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\add.php on line 21
+Error [2]: mysqli_connect(): php_network_getaddresses: getaddrinfo for loclhost failed: No such host is known.  in C:\xampp\htdocs\Php-SQL\add.php on line 21 
+
+[14-Oct-2024 19:30:05 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for loclhost failed: No such host is known.  in C:\xampp\htdocs\Php-SQL\add.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Php-SQL\add.php(21): mysqli_connect('loclhost', 'root', Object(SensitiveParameterValue), 'news_project')
+#1 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\add.php on line 21
+[14-Oct-2024 19:30:14 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'news_project.studentclass' doesn't exist in C:\xampp\htdocs\Php-SQL\add.php:26
+Stack trace:
+#0 C:\xampp\htdocs\Php-SQL\add.php(26): mysqli_query(Object(mysqli), 'SELECT * FROM s...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\add.php on line 26
+[14-Oct-2024 19:30:19 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'news_project.studentclass' doesn't exist in C:\xampp\htdocs\Php-SQL\add.php:26
+Stack trace:
+#0 C:\xampp\htdocs\Php-SQL\add.php(26): mysqli_query(Object(mysqli), 'SELECT * FROM s...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\add.php on line 26
+[14-Oct-2024 19:30:23 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'news_project.studentclass' doesn't exist in C:\xampp\htdocs\Php-SQL\add.php:26
+Stack trace:
+#0 C:\xampp\htdocs\Php-SQL\add.php(26): mysqli_query(Object(mysqli), 'SELECT * FROM s...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\add.php on line 26
+Error [2]: Undefined variable $call in C:\xampp\htdocs\Php-SQL\add.php on line 22 
+
+[14-Oct-2024 19:33:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Value of type null is not callable in C:\xampp\htdocs\Php-SQL\add.php:22
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\add.php on line 22
+Error [2]: Undefined variable $call in C:\xampp\htdocs\Php-SQL\add.php on line 22 
+
+[14-Oct-2024 19:33:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Value of type null is not callable in C:\xampp\htdocs\Php-SQL\add.php:22
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\add.php on line 22
+[14-Oct-2024 19:34:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function call() in C:\xampp\htdocs\Php-SQL\add.php:22
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\add.php on line 22
+[14-Oct-2024 19:34:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function call() in C:\xampp\htdocs\Php-SQL\add.php:22
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\add.php on line 22
+[14-Oct-2024 19:35:47 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'news_project.studentclass' doesn't exist in C:\xampp\htdocs\Php-SQL\add.php:26
+Stack trace:
+#0 C:\xampp\htdocs\Php-SQL\add.php(26): mysqli_query(Object(mysqli), 'SELECT * FROM s...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\add.php on line 26
+[14-Oct-2024 19:35:55 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'news_project.studentclass' doesn't exist in C:\xampp\htdocs\Php-SQL\add.php:26
+Stack trace:
+#0 C:\xampp\htdocs\Php-SQL\add.php(26): mysqli_query(Object(mysqli), 'SELECT * FROM s...')
+#1 {main}
+  thrown in C:\xampp\htdocs\Php-SQL\add.php on line 26

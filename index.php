@@ -5,7 +5,7 @@ include 'header.php';
 <div id="main-content">
     <h2>All Records</h2>
     <?php
-        $conn = mysqli_connect("locahost","root","","news_project");
+        $conn = mysqli_connect("localhost","root","","news_project");
         if (!$conn) {
             echo "Connection failed: " . mysqli_connect_error();
         }else{

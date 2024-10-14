@@ -1,4 +1,7 @@
-<?php include 'header.php'; ?>
+<?php include 'header.php';
+require 'config.php';
+?>
+
 <div id="main-content">
     <h2>Add New Record</h2>
     <form class="post-form" action="savedata.php" method="post">
@@ -14,9 +17,22 @@
             <label>Class</label>
             <select name="class">
                 <option value="" selected disabled>Select Class</option>
-                <option value="1">BCA</option>
-                <option value="2">BSC</option>
-                <option value="3">B.TECH</option>
+                <?php
+                $conn = mysqli_connect("localhost","root","","news_project");
+                if (!$conn){
+                echo "Connection failed: " . mysqli_connect_error();
+                }else{
+                $sql = "SELECT * FROM sclass";
+                $result = mysqli_query($conn, $sql);
+                }
+                if (!$result) {
+                    echo "SQL Error: " . mysqli_error($conn);
+                }
+                while($row = mysqli_fetch_assoc($result)){
+
+                ?>
+                <option value="<?php echo $row['cid']; ?>"><?php echo $row['cname']; ?></option>
+                <?php } ?>
             </select>
         </div>
         <div class="form-group">
