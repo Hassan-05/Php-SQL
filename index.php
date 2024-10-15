@@ -38,8 +38,7 @@ include 'header.php';
                 <td><?php echo $row['cname']; ?></td>
                 <td><?php echo $row['sphone']; ?></td>
                 <td>
-                    <?php var_dump($row); ?>
-                    <a href='edit.php'>Edit</a>
+                    <a href='edit.php?id=<?php echo $row['sid']; ?>'>Edit</a>
                     <a href='delete-inline.php'>Delete</a>
                 </td>
             </tr>
