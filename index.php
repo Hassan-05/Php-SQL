@@ -9,9 +9,10 @@ include 'header.php';
         if (!$conn) {
             echo "Connection failed: " . mysqli_connect_error();
         }else{
-        $sql = "SELECT * FROM students JOIN sclass WHERE students.sclass = sclass.cid";
+        $sql = "SELECT * FROM students JOIN sclass WHERE students.sclass = sclass.cid ORDER BY sid ASC" ;
         $result = mysqli_query($conn, $sql);
-        print_r($result);
+        $data=mysqli_num_rows($result);
+        echo "Records found:".$data;
         }
         if (!$result) {
             echo "SQL Error: " . mysqli_error($conn);

@@ -1,16 +1,16 @@
 <?php
 
-$stu_id=$_POST['sid'];
-$stu_name=$_POST['sname'];
-$stu_address=$_POST['saddress'];
-$stu_class=$_POST['sclass'];
-$stu_phone=$_POST['sphone'];
+echo $stu_id=$_POST['sid'];
+echo $stu_name=$_POST['sname'];
+echo$stu_address=$_POST['saddress'];
+echo"--".$stu_class=$_POST['sclass']."--";
+echo$stu_phone=$_POST['sphone'];
 
 $conn = mysqli_connect("localhost","root","","news_project");
 if (!$conn){
 echo "Connection failed: " . mysqli_connect_error();
 }else{
-$sql = "UPDATE students SET sname = '{$stu_name}',saddress = '{$stu_address}', sclass = '{$stu_class}', sphone = '{$stu_phone}' " ;
+$sql = "UPDATE students SET sname = '{$stu_name}', saddress = '{$stu_address}', sclass = '{$stu_class}', sphone = '{$stu_phone}' WHERE sid = {$stu_id}" ;
 $result = mysqli_query($conn, $sql);
 }
 if (!$result) {

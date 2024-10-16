@@ -4,11 +4,12 @@ $stu_address=$_POST['saddress'];
 $stu_class=$_POST['class'];
 $stu_phone=$_POST['sphone'];
 
+
 $conn = mysqli_connect("localhost","root","","news_project");
 if (!$conn){
     echo "Connection failed: " . mysqli_connect_error();
     }else{
-        $sql = "INSERT INTO students (sname,saddress,sclass,sphone) VALUES ('{$stu_name}','{$stu_address}','{$stu_class}','{$stu_phone}') WHERE sid = '{$stu_id}'" ;
+        $sql = "INSERT INTO students (sname,saddress,sclass,sphone) VALUES ('{$stu_name}','{$stu_address}','{$stu_class}','{$stu_phone}')" ;
         $result = mysqli_query($conn, $sql);
     }
     if(!$result) {

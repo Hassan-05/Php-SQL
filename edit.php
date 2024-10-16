@@ -42,7 +42,7 @@
                         else{
                             $select = "";
                         }
-                        echo "<option {$select} value='{$row1['id']}'>{$row1['cname']}</option>";
+                        echo "<option {$select} value='{$row1['cid']}'>{$row1['cname']}</option>";
                     }
                     echo '</select>';
                 }   
