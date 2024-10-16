@@ -14,7 +14,6 @@
         echo "SQL Error: " . mysqli_error($conn);
     }else{
         $row = mysqli_fetch_assoc($result);
-        var_dump($row);
     ?>
     <form class="post-form" action="updatedata.php" method="post">
       <div class="form-group">
@@ -28,10 +27,26 @@
       </div>
       <div class="form-group">
           <label>Class</label>
-          <select name="sclass">
-              <option value="" selected disabled>Select Class</option>
-              <option value="3">B.TECH</option>
-          </select>
+          <?php 
+          $sql1 = "SELECT * FROM sclass";
+          $result1 = mysqli_query($conn, $sql1);
+            if (!$result1) {
+            echo "SQL Error: " . mysqli_error($conn);
+            }else{
+                if(mysqli_num_rows($result1) > 0){
+                    echo '<select name="sclass">';
+                    while($row1 = mysqli_fetch_assoc($result1)){
+                        if($row['sclass'] == $row1['cid']){
+                            $select = "selected";
+                        }
+                        else{
+                            $select = "";
+                        }
+                        echo "<option {$select} value='{$row1['id']}'>{$row1['cname']}</option>";
+                    }
+                    echo '</select>';
+                }   
+            }?>
       </div>
       <div class="form-group">
           <label>Phone</label>

@@ -11,6 +11,7 @@ include 'header.php';
         }else{
         $sql = "SELECT * FROM students JOIN sclass WHERE students.sclass = sclass.cid";
         $result = mysqli_query($conn, $sql);
+        print_r($result);
         }
         if (!$result) {
             echo "SQL Error: " . mysqli_error($conn);
