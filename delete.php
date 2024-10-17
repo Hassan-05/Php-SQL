@@ -12,7 +12,7 @@
     </form>
     <?php
     if(isset($_POST['deletebtn'])){
-        header("Location: http://localhost/php-sql/index.php?id={$_POST['sid']");
+        header("Location: http://localhost/php-sql/delete-inline.php?id=".$_POST['sid']);
     }
     ?>
 </div>
