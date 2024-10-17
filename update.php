@@ -8,12 +8,10 @@
         </div>
         <input class="submit" type="submit" name="showbtn" value="Show" />
     </form>
-    <?php $test = isset($_POST['showbtn']);
-    var_dump($test); ?>
 
     <?php
     if(isset($_POST['showbtn'])){
-        $conn = mysqli_connect("localhost","root","","news_project");
+        require 'config.php';
         if (!$conn) {
             echo "Connection failed: " . mysqli_connect_error();
         }else{

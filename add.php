@@ -1,5 +1,5 @@
 <?php include 'header.php';
-require 'config.php';
+require 'err_handler.php';
 ?>
 
 <div id="main-content">
@@ -18,7 +18,7 @@ require 'config.php';
             <select name="class">
                 <option value="" selected disabled>Select Class</option>
                 <?php
-                $conn = mysqli_connect("localhost","root","","news_project");
+                require 'config.php';
                 if (!$conn){
                 echo "Connection failed: " . mysqli_connect_error();
                 }else{

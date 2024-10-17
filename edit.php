@@ -3,7 +3,7 @@
 <div id="main-content">
     <h2>Update Record</h2>
     <?php
-    $conn = mysqli_connect("localhost","root","","news_project");
+    require 'config.php';
     if (!$conn) {
         echo "Connection failed: " . mysqli_connect_error();
     }else{

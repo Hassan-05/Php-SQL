@@ -1,18 +1,16 @@
 <?php
 include 'header.php';
-//require 'config.php';
+//require 'err_handler.php';
 ?>
 <div id="main-content">
     <h2>All Records</h2>
     <?php
-        $conn = mysqli_connect("localhost","root","","news_project");
+        require 'config.php';
         if (!$conn) {
             echo "Connection failed: " . mysqli_connect_error();
         }else{
         $sql = "SELECT * FROM students JOIN sclass WHERE students.sclass = sclass.cid ORDER BY sid ASC" ;
         $result = mysqli_query($conn, $sql);
-        $data=mysqli_num_rows($result);
-        echo "Records found:".$data;
         }
         if (!$result) {
             echo "SQL Error: " . mysqli_error($conn);
@@ -41,7 +39,7 @@ include 'header.php';
                 <td><?php echo $row['sphone']; ?></td>
                 <td>
                     <a href='edit.php?id=<?php echo $row['sid']; ?>'>Edit</a>
-                    <a href='delete-inline.php'>Delete</a>
+                    <a href='delete-inline.php?id=<?php echo $row['sid']; ?>'>Delete</a>
                 </td>
             </tr>
             <?php

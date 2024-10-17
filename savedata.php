@@ -5,7 +5,7 @@ $stu_class=$_POST['class'];
 $stu_phone=$_POST['sphone'];
 
 
-$conn = mysqli_connect("localhost","root","","news_project");
+require 'config.php';
 if (!$conn){
     echo "Connection failed: " . mysqli_connect_error();
     }else{
